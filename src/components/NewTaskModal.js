@@ -44,6 +44,7 @@ export function NewTaskModal(props) {
             <form>
               <div id="task-title-input">
                 <label>Task Title</label>
+                <br/>
                 <input
                   type="text"
                   name="title"
@@ -53,6 +54,7 @@ export function NewTaskModal(props) {
               </div>
               <div id="task-desc-input">
                 <label>Description</label>
+                <br/>
                 <input
                   type="text"
                   name="description"
@@ -62,6 +64,7 @@ export function NewTaskModal(props) {
               </div>
               <div id="task-due-input">
                 <label>Due Date</label>
+                <br/>
                 <input
                   type="date"
                   name="dueDate"
@@ -70,6 +73,7 @@ export function NewTaskModal(props) {
                 />
               </div>
             </form>
+            <br/>
             <button
               id="create-task-button"
               onClick={newTask.title ? handleSubmitTask : handleAlert}
